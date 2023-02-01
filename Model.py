@@ -70,7 +70,7 @@ class Model:
     def set_player_name(self, name, seconds):
         line = []  # see on rida, mida kirjutatakse tekstifaili
         now = datetime.now().strftime('%Y-%m-%d %T')  # %H:%M:%%S
-        if name.strip():
+        if name is not None:  # name.strip():
             self.player_name = name.strip()
 
         line.append(now)  # kuna tegemist listiga, kõik peavad olema stringid

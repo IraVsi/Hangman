@@ -23,7 +23,7 @@ class View(Tk):
         self.title('Hangman')
         self.center(self)
 
-        #  Create two frames
+        #  Create three frames
         self.frame_top, self.frame_bottom, self.frame_image = self.create_two_frames()  # muutujate jrk on oluline
         # Image for "box"
         self.image = ImageTk.PhotoImage(Image.open(self.model.image_files[len(self.model.image_files) - 1]))

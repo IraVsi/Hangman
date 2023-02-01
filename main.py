@@ -1,7 +1,8 @@
 import os
 
 from Controller import Controller
-from sys import argv  #käsurealt lugemiseks
+from sys import argv  # käsurealt lugemiseks
+
 
 class Hangman:
 
@@ -11,7 +12,7 @@ class Hangman:
 
 if __name__ == '__main__':
     db_name = None
-    if len(argv) == 2: # kontrollime, kas on antud kaasa
+    if len(argv) == 2:  # kontrollime, kas on antud kaasa
         if os.path.exists(argv[1]):
             db_name = argv[1]  # new database name from command  Line
     Hangman()
