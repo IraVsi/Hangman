@@ -83,7 +83,7 @@ class Model:
             f.write(';'.join(line) + '\n')
 
     def read_leaderboard_file_contents(self):
-        self.score_data =[]
+        self.score_data = []
         empty_list = []
         all_lines = open(self.leaderboard_file, 'r', encoding='utf-8').readlines()
         for line in all_lines:
